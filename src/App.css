@@ -20,7 +20,7 @@
 .jumbotron {
     padding:70px 30px 70px 30px;
     margin:0px auto;
-    background-image: url("http://shopsafemarin-env.eba-vjj6mcnm.us-east-2.elasticbeanstalk.com/assets/images/jumbotron.png");
+    background-image: url("https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/jumbo.png?token=AIPE5ZROEPDR5AQR7UCSFCTAUGQ76");
     background-size: cover;
     display: flex;
     color: white;
