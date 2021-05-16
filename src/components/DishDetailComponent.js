@@ -5,11 +5,6 @@ import { Control, LocalForm, Errors } from 'react-redux-form';
 import { Loading } from './LoadingComponent';
 import { baseUrl } from '../shared/baseUrl';
 import { FadeTransform, Fade, Stagger } from 'react-animation-components';
-import OneStar from './OneStarComponent';
-import TwoStar from './TwoStarComponent';
-import ThreeStar from './ThreeStarComponent';
-import FourStar from './FourStarComponent';
-import FiveStar from './FiveStarComponent';
 
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
 const minLength = (len) => (val) => (val) && (val.length >= len);
@@ -468,7 +463,6 @@ function RenderComments({ comments, postComment, dishId }) {
   if (comments != null) {
     return (
       <div className="col-12 col-md-5 m-1">
-      	<GetStars stars={stars} />
       	<br />
         <h4>Reviews</h4>
         {commentList}
@@ -481,34 +475,5 @@ function RenderComments({ comments, postComment, dishId }) {
     );
   }
 }
-
-function GetStars(props) {
-  if (props.stars === 1) {
-    return(
-      <OneStar />
-    );
-  } else if (props.stars === 2) {
-    return(
-      <TwoStar />
-    );
-  } else if (props.stars === 3) {
-    return(
-      <ThreeStar />
-    );
-  } else if (props.stars === 4) {
-    return(
-      <FourStar />
-    );
-  } else if (props.stars === 5) {
-    return(
-      <FiveStar />
-    );
-  } else {
-    return(
-      <p className="cardText">No star ratings yet.</p>
-    );
-  }
-}
-
 
 export default DishDetail;

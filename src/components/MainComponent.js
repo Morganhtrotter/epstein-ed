@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Menu from './MenuComponent';
+import About from './MenuComponent';
 import DishDetail from './DishDetailComponent';
 import Home from './HomeComponent';
 import Contact from './ContactComponent';
-import About from './AboutComponent';
+import Services from './AboutComponent';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import ColorBar from './ColorBarComponent';
-import SurveyLink from './SurveyLink';
+import Forms from './FormsComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { postComment, fetchDishes, fetchComments, fetchPromos, fetchLeaders, postFeedback } from '../redux/ActionCreators';
@@ -57,7 +57,6 @@ class Main extends Component {
 						leadersLoading={this.props.leaders.isLoading}
 						leadersErrMess={this.props.leaders.errMess}
 					/>
-					<SurveyLink />
 					<ColorBar />
 				</div>
 			);
@@ -77,7 +76,7 @@ class Main extends Component {
 
 		const AboutPage = () => {
 			return(
-				<About leaders={this.props.leaders} />
+				<Services leaders={this.props.leaders} />
 			);
 		}
 
@@ -89,10 +88,10 @@ class Main extends Component {
 					    	<Switch>
 					    		<Route path="/home" component={HomePage} />
 					    		<Route exact path="/aboutus" component={AboutPage} />
-					    		<Route exact path="/menu" component={() => <Menu dishes={this.props.dishes} comments={this.props.comments} />} />
-					    		<Route path="/menu/:dishId" component={DishWithId} />
+					    		<Route exact path="/menu" component={() => <About dishes={this.props.dishes} leaders={this.props.leaders} comments={this.props.comments} />} />
 					    		<Route exact path="/contactus" component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm}
 					    				postFeedback={this.props.postFeedback} />} />
+					    		<Route exact path="/forms" component={() => <Forms />} />
 					    		<Redirect to="/home" />
 					    	</Switch>
 					    </CSSTransition>

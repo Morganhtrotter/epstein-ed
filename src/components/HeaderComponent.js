@@ -48,17 +48,22 @@ class Header extends Component {
 		          	</NavItem>
 		          	<NavItem>
 		          		<NavLink className="nav-link" to="/menu">
-		          			<span></span> STORES
+		          			<span></span> ABOUT
 		          		</NavLink>
 		          	</NavItem>
 		          	<NavItem>
 		          		<NavLink className="nav-link" to="/aboutus">
-		          			<span></span> ABOUT US
+		          			<span></span> MY SERVICES
+		          		</NavLink>
+		          	</NavItem>
+		          	<NavItem>
+		          		<NavLink className="nav-link" to="/forms">
+		          			<span></span> FORMS
 		          		</NavLink>
 		          	</NavItem>
 		          	<NavItem>
 		          		<NavLink className="nav-link" to="/contactus">
-		          			<span></span> CONTACT US
+		          			<span></span> CONTACT
 		          		</NavLink>
 		          	</NavItem>
 		          </Nav>
@@ -80,33 +85,12 @@ class Header extends Component {
 	      			<div className="col-12 col-sm-6">
 	      				<img className="mb-2 logo" src="../assets/images/logo.png" alt="logo.png" />
 	      				<img className="mb-2 logom" src="../assets/images/logom.png" alt="logo.png" />
-	      				<p className="body">A single source of health and safety information on grocery stores located in Marin County. Submit your reviews now to help us foster a safer shopping environment.</p>
+	      				<p className="body">Helping students develop skills and strategies for academic success and confidence in a safe
+								and nurturing environment</p>
 	      			</div>
 	      		</div>
 	      	</div>
 	      </Jumbotron>
-	      <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
-	      	<ModalHeader toggle={this.toggleModal}>Login</ModalHeader>
-	      	<ModalBody>
-	      		<Form onSubmit={this.handleLogin}>
-	      			<FormGroup>
-	      				<Label htmlFor="username">Username</Label>
-	      				<Input type="text" id="username" name="username" innerRef={(input) => this.username = input} />
-	      			</FormGroup>
-	      			<FormGroup>
-	      				<Label htmlFor="password">Password</Label>
-	      				<Input type="password" id="password" name="password" innerRef={(input) => this.password = input} />
-	      			</FormGroup>
-	      			<FormGroup check>
-	      				<Label check>
-	      					<Input type="checkbox" name="remember" innerRef={(input) => this.remember = input} />
-	      					Remember me
-	      				</Label>
-	      			</FormGroup>
-	      			<Button type="submit" value="submit" color="primary">Login</Button>
-	      		</Form>
-	      	</ModalBody>
-	      </Modal>
 			</React.Fragment>
 		);
 	}
