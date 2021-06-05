@@ -83,8 +83,8 @@ class Header extends Component {
 	      	<div className="container">
 	      		<div className="row row-header">
 	      			<div className="col-12 col-sm-6">
-	      				<img className="mb-2 logo" src="../assets/images/logo.png" alt="logo.png" />
-	      				<img className="mb-2 logom" src="../assets/images/logom.png" alt="logo.png" />
+	      				<img className="mb-2 logo" src="http://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/logo.png" alt="logo.png" />
+	      				<img className="mb-2 logom" src="http://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/logo.png" alt="logo.png" />
 	      				<p className="body">Helping students develop skills and strategies for academic success and confidence in a safe
 								and nurturing environment</p>
 	      			</div>

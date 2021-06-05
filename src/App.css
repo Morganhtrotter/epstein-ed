@@ -18,9 +18,11 @@
 }
 
 .jumbotron {
-    padding:70px 30px 70px 30px;
+    padding: 70px 30px;
     margin:0px auto;
     background-image: url("https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/jumbo.png?token=AIPE5ZROEPDR5AQR7UCSFCTAUGQ76");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     display: flex;
     color: white;
@@ -143,6 +145,7 @@ h2 {
 
 .logo {
     display: block;
+    margin-left: -6px;
 }
 
 .logom {
@@ -173,7 +176,7 @@ h2 {
 }
 
 .colorBar {
-    background-color: floralwhite;
+    background-color: #0A1013;
     height: 15vh;
     margin: 0;
     width: 100%;
@@ -195,4 +198,33 @@ h2 {
     justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
+}
+
+.carousel {
+    height: 75vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.caption {
+    position: absolute;
+    top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.captionText {
+    max-width: 700px;
+    margin-right: auto;
+    margin-left: auto;
+    background: rgba(120, 120, 120, 0.5);
+    padding: 16px;
+    border-radius: 5px;
+}
+
+body {
+
 }
