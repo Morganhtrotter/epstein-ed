@@ -52,25 +52,21 @@ address{
     transition: all 300ms ease-in;
 }
 
-#MainDiv {
-    background-color: floralwhite;
-}
-
 .body {
     font-family: 'Montserrat', serif;
 }
 
 p {
-    font-family: 'Roboto', serif;
+    font-family: 'Montserrat', serif;
 }
 
 h3 {
     margin-top: 20px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .cardText {
@@ -220,11 +216,28 @@ h2 {
     max-width: 700px;
     margin-right: auto;
     margin-left: auto;
-    background: rgba(120, 120, 120, 0.5);
     padding: 16px;
     border-radius: 5px;
+    color: white;
 }
 
 body {
 
+}
+
+.carouselImg {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+@media only screen and (max-device-width: 724px) {
+  .carouselImg {
+    width: unset;
+    background-size: cover;
+  }
+}
+
+.homeAbout {
+    padding: 50px 0;
 }

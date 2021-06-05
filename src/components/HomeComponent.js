@@ -2,15 +2,16 @@ import React from 'react';
 import { Row, Col, Button} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
+import ColorBar from './ColorBarComponent';
 
 function Home(props) {
 	return(
 		<div>
 			<Carousel fade class="carousel">
-			  <Carousel.Item interval={5000}>
+			  <Carousel.Item interval={15000}>
 			    <img
-			      className="d-block w-100"
-			      src="https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/Second.jpg"
+			      class="carouselImg"
+			      src="https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/First.png"
 			      alt="First slide"
 			    /> 
 			    <Carousel.Caption class="caption col-md-12">
@@ -24,10 +25,10 @@ function Home(props) {
 				  </div>
 			    </Carousel.Caption>
 			  </Carousel.Item>
-			  <Carousel.Item interval={5000}>
+			  <Carousel.Item interval={15000}>
 			    <img
-			      className="d-block w-100"
-			      src="https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/First.jpg"
+			      class="carouselImg"
+			      src="https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/third.png"
 			      alt="Second slide"
 			    />
 
@@ -41,16 +42,16 @@ function Home(props) {
 				  </div>
 			    </Carousel.Caption>
 			  </Carousel.Item>
-			  <Carousel.Item interval={5000}>
+			  <Carousel.Item interval={15000}>
 			    <img
-			      className="d-block w-100"
-			      src="https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/Third.jpg"
+			      class="carouselImg"
+			      src="https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/second.png"
 			      alt="Third slide"
 			    />
 
 			    <Carousel.Caption class="caption col-md-12">
 			      <div class="captionText">
-				      <h3>The Goal:</h3>
+				      <h3>The Goal</h3>
 				      <p>As an educational therapist, my primary goal is to make myself obsolete: ultimately, my students
 							will utilize a toolbox that we build together in order to function independently and successfully in
 							academic settings.</p>
@@ -58,7 +59,8 @@ function Home(props) {
 			    </Carousel.Caption>
 			  </Carousel.Item>
 			</Carousel>
-			<div className="container">
+			<ColorBar />
+			<div className="container homeAbout">
 	      		<div className="row">
 	      			<div className="col-12">
 						<h3>About Lisa:</h3>
