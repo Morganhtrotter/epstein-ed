@@ -13,7 +13,7 @@
 .footer{
     margin:0px auto;
     padding: 20px 0px 20px 0px;
-    background-image: url("http://shopsafemarin-env.eba-vjj6mcnm.us-east-2.elasticbeanstalk.com/assets/images/home.png");
+    background-color: #010202;
     color: white;
 }
 
@@ -56,16 +56,18 @@ address{
     font-family: 'Montserrat', serif;
 }
 
-p {
+p, ul {
     font-family: 'Montserrat', serif;
 }
 
 h3 {
-    margin-top: 20px;
+    margin: 20px 0;
     font-family: 'Oswald', sans-serif;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #B0B0B0;
 }
 
-h2 {
+h2, h4 {
     font-family: 'Oswald', sans-serif;
 }
 
@@ -240,4 +242,16 @@ body {
 
 .homeAbout {
     padding: 50px 0;
+}
+
+.forms {
+    margin-bottom: 50px;
+}
+
+.headshot {
+    width: 100%;
+}
+
+.caps {
+    font-weight: bold;
 }

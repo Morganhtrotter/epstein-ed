@@ -7,7 +7,7 @@ function Services(props) {
     return(
         <div className="container">
             <div className="row">
-                <div className="col-12">
+                <div className="col-8">
                     <h3>MY SERVICES</h3>
                     <p>Intensive one on one work with students allows them the opportunity to sharpen academic skills
                             and, in turn, improve how they feel about themselves. Typically, after an initial intake meeting with

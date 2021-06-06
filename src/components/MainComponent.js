@@ -46,7 +46,6 @@ class Main extends Component {
 		const HomePage = () => {
 			return(
 				<div>
-					<ColorBar />
 					<Home dish={this.props.dishes.dishes.filter((dish) => dish.featured)[0]}
 						dishesLoading={this.props.dishes.isLoading}
 						dishesErrMess={this.props.dishes.errMess}
@@ -57,7 +56,6 @@ class Main extends Component {
 						leadersLoading={this.props.leaders.isLoading}
 						leadersErrMess={this.props.leaders.errMess}
 					/>
-					<ColorBar />
 				</div>
 			);
 		}
@@ -83,19 +81,21 @@ class Main extends Component {
 		return (
 		    <div id="MainDiv">
 		    	<Header />
-		    		<TransitionGroup>
-		    			<CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
-					    	<Switch>
-					    		<Route path="/home" component={HomePage} />
-					    		<Route exact path="/aboutus" component={AboutPage} />
-					    		<Route exact path="/menu" component={() => <About dishes={this.props.dishes} leaders={this.props.leaders} comments={this.props.comments} />} />
-					    		<Route exact path="/contactus" component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm}
-					    				postFeedback={this.props.postFeedback} />} />
-					    		<Route exact path="/forms" component={() => <Forms />} />
-					    		<Redirect to="/home" />
-					    	</Switch>
-					    </CSSTransition>
-			    	</TransitionGroup>
+		    		<ColorBar />
+			    		<TransitionGroup>
+			    			<CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
+						    	<Switch>
+						    		<Route path="/home" component={HomePage} />
+						    		<Route exact path="/aboutus" component={AboutPage} />
+						    		<Route exact path="/menu" component={() => <About dishes={this.props.dishes} leaders={this.props.leaders} comments={this.props.comments} />} />
+						    		<Route exact path="/contactus" component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm}
+						    				postFeedback={this.props.postFeedback} />} />
+						    		<Route exact path="/forms" component={() => <Forms />} />
+						    		<Redirect to="/home" />
+						    	</Switch>
+						    </CSSTransition>
+				    	</TransitionGroup>
+			    	<ColorBar />
 		      <Footer />
 		    </div>
 	  	);

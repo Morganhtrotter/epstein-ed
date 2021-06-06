@@ -7,13 +7,13 @@ function Forms(props) {
     return(
         <div className="container">
             <div className="row">
-                <div className="col-12">
+                <div className="col-12 forms">
                     <h3>Forms</h3>
-                    <a href="../public/assets/forms/Intake.pdf" target="_blank">Intake</a>
+                    <a href="https://github.com/Morganhtrotter/epstein-ed/raw/dependabot/npm_and_yarn/bootstrap-4.3.1/public/forms/Intake.pdf">Intake</a>
                     <br />
-                    <a href="../assets/forms/Policies.pdf" target="_blank">Policies</a>
+                    <a href="https://github.com/Morganhtrotter/epstein-ed/raw/dependabot/npm_and_yarn/bootstrap-4.3.1/public/forms/Policies.pdf">Policies</a>
                     <br />
-                    <a href="../assets/forms/ReleaseOfInformation.pdf" target="_blank">Release Of Information</a>
+                    <a href="https://github.com/Morganhtrotter/epstein-ed/raw/dependabot/npm_and_yarn/bootstrap-4.3.1/public/forms/ReleaseOfInformation.pdf">Release Of Information</a>
                 </div>                
             </div>
         </div>
