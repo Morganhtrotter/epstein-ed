@@ -2,9 +2,11 @@ import React from 'react';
 import { Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { baseUrl } from '../shared/baseUrl';
 import { Stagger, Fade } from 'react-animation-components';
+import TestimonialTwo from './TestimonialTwoComponent';
 
 function About(props) {
     return(
+        <div>
         <div className="container">
             <div className="row">
                 <div className="col-12">
@@ -21,9 +23,9 @@ function About(props) {
                 </div>
                 <div className="col-8">
                     <h4>Education:</h4>
-                    <p className="caps">EDUCATIONAL THERAPY CERTIFICATION PROGRAM</p>
+                    <p className="caps">EDUCATIONAL THERAPY CERTIFICATION</p>
                     <p>University of California, Santa Cruz Extension</p>
-                    <p className="caps">TEACHING CREDENTIAL PROGRAM</p>
+                    <p className="caps">TEACHING CREDENTIAL</p>
                     <p>Dominican University, San Rafael, CA
                         Single Subject (history) and Multiple Subject Credentials</p>
                     <p className="caps">JURIS DOCTORATE</p>
@@ -42,6 +44,8 @@ function About(props) {
                     <p>Member: Association of Educational Therapists</p>
                 </div>                
             </div>
+        </div>
+        <TestimonialTwo />
         </div>
     );
 }

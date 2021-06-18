@@ -3,6 +3,7 @@ import { Row, Col, Button} from 'reactstrap';
 import { Link } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import ColorBar from './ColorBarComponent';
+import Testimonial from './TestimonialComponent';
 
 function Home(props) {
 	return(
@@ -79,9 +80,10 @@ function Home(props) {
 								social, emotional, and academic demands on young people today.</p>
 						<p>Lisa has worked with students who have various diagnosed learning challenges as well as those
 								who simply want to improve their writing or study skills.</p>
-						</div>
+					</div>
 				</div>
 			</div>
+			<Testimonial />
 		</div>
 	);
 }

@@ -8,6 +8,7 @@ import Header from './HeaderComponent';
 import Footer from './FooterComponent';
 import ColorBar from './ColorBarComponent';
 import Forms from './FormsComponent';
+import Testimonial from './TestimonialComponent';
 import { Switch, Route, Redirect, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { postComment, fetchDishes, fetchComments, fetchPromos, fetchLeaders, postFeedback } from '../redux/ActionCreators';
@@ -81,21 +82,20 @@ class Main extends Component {
 		return (
 		    <div id="MainDiv">
 		    	<Header />
-		    		<ColorBar />
-			    		<TransitionGroup>
-			    			<CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
-						    	<Switch>
-						    		<Route path="/home" component={HomePage} />
-						    		<Route exact path="/aboutus" component={AboutPage} />
-						    		<Route exact path="/menu" component={() => <About dishes={this.props.dishes} leaders={this.props.leaders} comments={this.props.comments} />} />
-						    		<Route exact path="/contactus" component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm}
-						    				postFeedback={this.props.postFeedback} />} />
-						    		<Route exact path="/forms" component={() => <Forms />} />
-						    		<Redirect to="/home" />
-						    	</Switch>
-						    </CSSTransition>
-				    	</TransitionGroup>
-			    	<ColorBar />
+	    		<ColorBar />
+	    		<TransitionGroup>
+	    			<CSSTransition key={this.props.location.key} classNames="page" timeout={300}>
+				    	<Switch>
+				    		<Route path="/home" component={HomePage} />
+				    		<Route exact path="/aboutus" component={AboutPage} />
+				    		<Route exact path="/menu" component={() => <About dishes={this.props.dishes} leaders={this.props.leaders} comments={this.props.comments} />} />
+				    		<Route exact path="/contactus" component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm}
+				    				postFeedback={this.props.postFeedback} />} />
+				    		<Route exact path="/forms" component={() => <Forms />} />
+				    		<Redirect to="/home" />
+				    	</Switch>
+				    </CSSTransition>
+		    	</TransitionGroup>
 		      <Footer />
 		    </div>
 	  	);

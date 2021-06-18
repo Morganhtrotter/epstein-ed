@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Button, Label, Col, Row, } from 'reactstrap';
 import { Control, Form, Errors } from 'react-redux-form';
+import Testimonial from './TestimonialComponent';
 
 const required = (val) => val && val.length;
 const maxLength = (len) => (val) => !(val) || (val.length <= len);
@@ -25,6 +26,7 @@ class Contact extends Component {
 
     render() {
         return(
+            <div>
             <div className="container">
                 <div className="row">
                     {/*
@@ -59,6 +61,8 @@ class Contact extends Component {
                         <p>San Rafael, CA 94901</p>
                     </div>
                 </div>
+            </div>
+            <Testimonial />
             </div>
         );
     }

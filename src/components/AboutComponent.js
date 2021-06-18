@@ -2,9 +2,11 @@ import React from 'react';
 import { Card, CardBody, CardHeader, Media } from 'reactstrap';
 import { baseUrl } from '../shared/baseUrl';
 import { Stagger, Fade } from 'react-animation-components';
+import TestimonialThree from './TestimonialThreeComponent';
 
 function Services(props) {
     return(
+        <div>
         <div className="container">
             <div className="row">
                 <div className="col-8">
@@ -49,6 +51,8 @@ function Services(props) {
                     <p>Services are offered either in person in my central San Rafael office or via Zoom.</p>
                 </div>                
             </div>
+        </div>
+        <TestimonialThree />
         </div>
     );
 }
