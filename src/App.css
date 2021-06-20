@@ -1,4 +1,10 @@
- .row-header{
+:root {
+    --footer: #ffffff;
+    --navbar: #E1EB71;
+    --colorbar: #E1EB71;
+}
+
+.row-header{
     margin:0px auto;
     padding:0px auto;
 }
@@ -13,7 +19,7 @@
 .footer{
     margin:0px auto;
     padding: 20px 0px 20px 0px;
-    background-color: #010202;
+    background-color: var(--footer);
     color: white;
 }
 
@@ -37,7 +43,7 @@ address{
 }
 
 .navbar-dark {
-    background-color: #0A1013;
+    background-color: var(--navbar);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -128,19 +134,6 @@ h2, h4 {
     align-items: center;
 }
 
-.textbox {
-    border-radius: 10px;
-    padding: 20px;
-    font-family: sans-serif;
-    color: #696969;
-    font-size: 14pt;
-    background: rgba(255, 255, 255, 0.8);
-}
-
-.cardbg {
-    background: floralwhite;
-}
-
 .logo {
     display: block;
     margin-left: -6px;
@@ -155,26 +148,8 @@ h2, h4 {
     .logom {display: block}
 }
 
-.select {
-    background-color: floralwhite !important;
-}
-
-.buttonStyle {
-    color: floralwhite;
-    background-color: #008000;
-}
-
-.buttonStyle:hover {
-    color: white;
-    background-color: #006400;
-}
-
-.buttonStyle {
-    background-color: #008000;
-}
-
 .colorBar {
-    background-color: #0A1013;
+    background-color: var(--colorbar);
     height: 15vh;
     margin: 0;
     width: 100%;
@@ -185,17 +160,6 @@ h2, h4 {
 
 .addressFooter {
     color: white;
-}
-
-.surveyLink {
-    background-color: #d3d3d3;
-    height: 25vh;
-    margin: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Montserrat', sans-serif;
 }
 
 .carousel {
@@ -222,11 +186,6 @@ h2, h4 {
     border-radius: 5px;
     color: white;
 }
-
-body {
-
-}
-
 .carouselImg {
     background-repeat: no-repeat;
     background-position: center;
@@ -259,8 +218,8 @@ body {
 .testimonial {
     padding-top: 50px;
     padding-bottom: 50px;
-    color: white;
-    background-color: #0A1013;
+    color: black;
+    background-color: var(--colorbar);
     margin: 0;
     width: 100%;
     justify-content: center;
@@ -272,4 +231,12 @@ body {
     background-color: rgba(220, 220, 220, 0.1);
     padding: 10px;
     border-radius: 5px;
+}
+
+.navbar-dark .navbar-nav .nav-link  {
+    color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover  {
+    color: blue !important;
 }
