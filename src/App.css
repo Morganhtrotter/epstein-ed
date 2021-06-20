@@ -2,6 +2,9 @@
     --footer: #ffffff;
     --navbar: #E1EB71;
     --colorbar: #E1EB71;
+    --maintext: black;
+    --carouseltext: white;
+    --mainbg: #FDFDFD;
 }
 
 .row-header{
@@ -20,7 +23,7 @@
     margin:0px auto;
     padding: 20px 0px 20px 0px;
     background-color: var(--footer);
-    color: white;
+    color: var(--maintext);
 }
 
 .jumbotron {
@@ -31,15 +34,9 @@
     background-position: center;
     background-size: cover;
     display: flex;
-    color: white;
+    color: var(--maintext);
     font-family: 'Raleway', sans-serif;
     border-radius: 0px;
-}
-
-address{
-    font-size:80%;
-    margin:0px;
-    color:#0f0f0f;
 }
 
 .navbar-dark {
@@ -77,12 +74,6 @@ h2, h4 {
     font-family: 'Oswald', sans-serif;
 }
 
-.cardText {
-    font-family: 'Montserrat', sans-serif;
-    color: white;
-    opacity: 0.5;
-}
-
 .cardTitle {
     font-family: 'Roboto Condensed', sans-serif;
     color: white;
@@ -94,32 +85,6 @@ h2, h4 {
   [class*="cardTitle"] {
     font-size: 20pt;
   }
-}
-
-.card:hover .cardTitle {
-    opacity: 1;
-}
-
-.card:hover .cardText {
-    opacity: 1;
-}
-
-.card:hover .fa-star {
-    opacity: 1;
-}
-
-.card:hover .checked {
-    opacity: 1;
-}
-
-.fa-star {
-    color: black;
-    opacity: 0.5;
-}
-
-.checked {
-    color: orange;
-    opacity: 0.5;
 }
 
 .bg {
@@ -184,7 +149,7 @@ h2, h4 {
     margin-left: auto;
     padding: 16px;
     border-radius: 5px;
-    color: white;
+    color: var(--carouseltext);
 }
 .carouselImg {
     background-repeat: no-repeat;
@@ -239,4 +204,13 @@ h2, h4 {
 
 .navbar-dark .navbar-nav .nav-link:hover  {
     color: blue !important;
+}
+
+body {
+    color: var(--maintext);
+    background-color: var(--mainbg)
+}
+
+.headshot {
+    border: solid 20px var(--colorbar);
 }
