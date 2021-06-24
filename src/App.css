@@ -1,9 +1,9 @@
 :root {
-    --footer: #E36161;
+    --footer: #B4BC5A;
     --navbar: #E1EB71;
     --colorbar: #E1EB71;
     --maintext: black;
-    --carouseltext: white;
+    --carouseltext: black;
     --mainbg: #FDFDFD;
 }
 
@@ -27,7 +27,7 @@
 }
 
 .jumbotron {
-    padding: 70px 30px;
+    padding: 120px 30px 70px 30px;
     margin:0px auto;
     background-image: url("https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/jumbo.png?token=AIPE5ZROEPDR5AQR7UCSFCTAUGQ76");
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@ h3 {
     margin: 20px 0;
     font-family: 'Oswald', sans-serif;
     padding-bottom: 15px;
-    border-bottom: 1px solid #B0B0B0;
+    border-bottom: 1px solid black;
 }
 
 h2, h4 {
@@ -192,10 +192,10 @@ h2, h4 {
     line-height: 2rem;
 }
 
-.testimonialText {
-    background-color: rgba(220, 220, 220, 0.1);
-    padding: 10px;
-    border-radius: 5px;
+.testimonialText, .headerOutline {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
 }
 
 .navbar-dark .navbar-nav .nav-link  {
@@ -211,6 +211,9 @@ body {
     background-color: var(--mainbg)
 }
 
-.headshot {
-    border: solid 20px var(--colorbar);
+.navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 5px 10px #606060;
 }

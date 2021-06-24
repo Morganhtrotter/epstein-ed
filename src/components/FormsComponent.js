@@ -15,7 +15,7 @@ function Forms(props) {
                     <br />
                     <a href="https://github.com/Morganhtrotter/epstein-ed/raw/dependabot/npm_and_yarn/bootstrap-4.3.1/public/forms/Policies.pdf">Policies</a>
                     <br />
-                    <a href="https://github.com/Morganhtrotter/epstein-ed/raw/dependabot/npm_and_yarn/bootstrap-4.3.1/public/forms/ReleaseOfInformation.pdf">Release Of Information</a>
+                    <a href="https://github.com/Morganhtrotter/epstein-ed/raw/dependabot/npm_and_yarn/bootstrap-4.3.1/public/forms/ReleaseOfInformation.pdf">Release of Information</a>
                 </div>                
             </div>
         </div>

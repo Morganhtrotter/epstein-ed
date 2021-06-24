@@ -6,7 +6,7 @@ function TestimonialTwo(props) {
 		<div className="testimonial">
 			<div className="container">
 				<div className="row">
-					<p className="col-12 testimonialText">"Our 5th grader has ADD, Dyslexia, and Dysgraphia 
+					<p className="col-12 testimonialText">"Our 5th grader has ADD, dyslexia, and dysgraphia 
 							and has been working with Lisa for the past year on strengthening 
 							his core writing, recall, and literacy skills. Lisa was able to quickly 
 							identify areas of weakness and creatively adapt her lessons in an 
