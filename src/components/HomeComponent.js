@@ -12,7 +12,7 @@ function Home(props) {
 			  <Carousel.Item interval={15000}>
 			    <img
 			      class="carouselImg"
-			      src="https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/First.png"
+			      src="https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/First.jpg"
 			      alt="First slide"
 			    /> 
 			    <Carousel.Caption class="caption col-md-12">
@@ -29,7 +29,7 @@ function Home(props) {
 			  <Carousel.Item interval={15000}>
 			    <img
 			      class="carouselImg"
-			      src="https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/third.png"
+			      src="https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/Third.jpg"
 			      alt="Second slide"
 			    />
 
@@ -46,7 +46,7 @@ function Home(props) {
 			  <Carousel.Item interval={15000}>
 			    <img
 			      class="carouselImg"
-			      src="https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/second.png"
+			      src="https://raw.githubusercontent.com/Morganhtrotter/epstein-ed/dependabot/npm_and_yarn/bootstrap-4.3.1/public/assets/images/Second.jpg"
 			      alt="Third slide"
 			    />
 
