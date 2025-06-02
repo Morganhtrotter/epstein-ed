@@ -39,7 +39,6 @@ function About(props) {
                     <p>Neuroscience and Classroom Engagement, Learning and the Brain</p>
                     <p>The Neuroscience of Reading, Learning and the Brain</p>
                     <p>Sarah Ward, Executive Function</p>
-                    <p>Making Math Real</p>
                     <p>Wilson Reading System</p>
                     <p>Member: Association of Educational Therapists</p>
                 </div>                

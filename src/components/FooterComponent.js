@@ -12,7 +12,6 @@ function Footer(props) {
                         <li><Link className="footerText" to="/home">Home</Link></li>
                         <li><Link className="footerText" to="/menu">About</Link></li>
                         <li><Link className="footerText" to="/aboutus">My Services</Link></li>
-                        <li><Link className="footerText" to="/forms">Forms</Link></li>
                         <li><Link className="footerText" to="/contactus">Contact</Link></li>
                     </ul>
                 </div>

@@ -51,13 +51,12 @@ class Contact extends Component {
                     </div>
                     <div className="col-12 col-sm-4">
                         <h3>Office Location:</h3>
-                        <p>The Bay Building</p>
-                        <p>711 Grand Avenue, STE 230</p>
-                        <p>San Rafael, CA 94901</p>
+                        <p>919 Sir Francis Drake, suite 107</p>
+                        <p>Kentfield, CA 94904</p>
                     </div>
                     <div className="col-12 col-sm-4">
                         <h3>Mailing Address:</h3>
-                        <p>369B Third Street, #182</p>
+                        <p>34 Curtis Ave</p>
                         <p>San Rafael, CA 94901</p>
                     </div>
                 </div>
